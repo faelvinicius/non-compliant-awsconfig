@@ -15,7 +15,7 @@ for BUCKET_NAME in "${BUCKETS_LIST[@]}"; do
   then
   
   count_list=$(($count_list+1))
-#  $(zabbix_sender -z 127.0.0.1 -s "account-aws-anima-security" -k s3.rn.pub -o $BUCKET_NAME)
+
   PUBLIC_READ_BUCKETS+=(${BUCKET_NAME})
 
   fi
