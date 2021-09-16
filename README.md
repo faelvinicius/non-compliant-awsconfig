@@ -25,4 +25,4 @@ E também copiar os arquivos de User Parameter que estão no diretorio "zabbix_a
 No console do zabbix importar o template "AWS-COMPLIANT.xml" que se encontra no diretório "template-zabbix".
 Criar um host para cada conta da AWS que for ser monitorada e atribuir o template "AWS-COMPLIANT".
 
-![Screenshot](prints/zabbix-host.png)
+![Screenshot](prints/zabbix-hosts.png)
