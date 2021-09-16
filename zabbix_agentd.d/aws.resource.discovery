@@ -1,0 +1,5 @@
+#!/bin/bash
+aws configservice get-discovered-resource-counts --region us-east-1 | /bin/jq 'del(.totalDiscoveredResources)|.+{"data":.resourceCounts}|del(.resourceCounts)' | /bin/sed 's/\"resourceType\"/\"{#RESOURCETYPE}\"/g'
+
+
+

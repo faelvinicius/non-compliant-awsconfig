@@ -1,0 +1,8 @@
+#!/bin/bash
+
+profile=$1
+
+aws configservice get-discovered-resource-counts --profile $profile --region us-east-1 | jq 'del(.totalDiscoveredResources)|.+{"data":.resourceCounts}|del(.resourceCounts)' | /bin/sed 's/\"resourceType\"/\"{#RESOURCETYPE}\"/g'
+
+
+
