@@ -13,3 +13,5 @@ Regra que mostra quais instâncias estão com IP público.
 Regra que mostra quais portas em um Security Group estão apontando para range 0.0.0.0/0.
 - iam-user-mfa-enabled
 Regra que mostra quais contas de IAM User não estão com o MFA habilitado.
+
+![Screenshot](prints/dash-grafana.png)
