@@ -29,4 +29,4 @@ Criar um host para cada conta da AWS que for ser monitorada e atribuir o templat
 
 #### Configuração no Grafana
 
-No grafana 
+No grafana após adicionar o datasource do zabbix, basta importar o arquivo json "inventory-aws.json" no grafana e apontar para o datasource do zabbix.
