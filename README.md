@@ -19,10 +19,14 @@ Regra que mostra quais contas de IAM User não estão com o MFA habilitado.
 
 #### Configuração no Zabbix
 
-Para configurar no zabbix, basta copiar os scripts que estão no diretório "scrips-zabbix" e colocar dentro do diretório de scripts do zabbix. No meu zabbix eu criei uma pasta scripts dentro do "/etc/zabbix/".
-E também copiar os arquivos de User Parameter que estão no diretorio "zabbix_agent.d" para o diretório do zabbix "/etc/zabbix/zabbix_agent.d".
+Para configurar no zabbix, basta copiar os scripts que estão no diretório "scrips-zabbix" e colocar dentro do diretório de scripts do zabbix.<br/> No meu zabbix eu criei uma pasta scripts dentro do "/etc/zabbix/".<br/>
+E também copiar os arquivos de User Parameter que estão no diretorio "zabbix_agent.d" para o diretório do zabbix "/etc/zabbix/zabbix_agent.d".<br/>
 
-No console do zabbix importar o template "AWS-COMPLIANT.xml" que se encontra no diretório "template-zabbix".
+No console do zabbix importar o template "AWS-COMPLIANT.xml" que se encontra no diretório "template-zabbix".<br/>
 Criar um host para cada conta da AWS que for ser monitorada e atribuir o template "AWS-COMPLIANT".
 
 ![Screenshot](prints/zabbix-hosts.png)
+
+#### Configuração no Grafana
+
+No grafana 
